@@ -94,6 +94,7 @@
           </tagBase>
           ...
         </configuration>
+       </plugin>
       </plugins>
     </pluginManagement>
   </build>
