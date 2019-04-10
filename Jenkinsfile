@@ -1,34 +1,9 @@
-    pipeline {
-        agent any
-        stages {
-            stage('Checkout from git ') {
-                steps {
-                    echo "checking out from git"    
-                    checkout([$class: 'GitSCM', branches: [[name: '*/featur1']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '927d86e3-03fd-468c-a3e6-063f6771cea4', url: 'https://github.com/Pravina1/git-pipeline.git']]])
-                }
-                }
-            stage('clean') {
-                steps {
-                    sh "mvn clean"
-                    }
-                }
-            stage('compile') {
-                steps {
-                    echo 'compiling src....'
-                    sh "mvn compile"
-                    }
-                }
-            stage('package') {
-                steps {
-                    sh "mvn package"
-                      }
-                }
-            stage('deploy') {
-                steps {
-                    sh "mvn deploy"
-                    }
-                }
-            }
-        }
+Merge branch 'feature1' of github.com:Pravina1/git-pipeline into feature1
 
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
 
+new code added
