@@ -31,13 +31,13 @@
  <repository>
   <id>my_release_deployment</id>
   <name>internal release</name>
-  <url>http://35.243.141.234:8081/repository/release/</url>
+  <url>http://35.243.141.234:8081/repository/feature2_release/</url>
  </repository>
 
  <snapshotRepository>
   <id>my_snapshot_deployment</id>
   <name>internal snapshot release</name>
-  <url>http://35.243.141.234:8081/repository/snapshot/</url>
+  <url>http://35.243.141.234:8081/repository/feature2_snapshot/</url>
  </snapshotRepository>
 </distributionManagement>
 
