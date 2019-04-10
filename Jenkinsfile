@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout from git ') {
             steps {
                 echo "checking out from git"    
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '927d86e3-03fd-468c-a3e6-063f6771cea4', url: 'https://github.com/Pravina1/git-pipeline.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/feature3']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '927d86e3-03fd-468c-a3e6-063f6771cea4', url: 'https://github.com/Pravina1/git-pipeline.git']]])
             }
             }
         stage('clean') {
