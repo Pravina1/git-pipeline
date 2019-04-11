@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout froam git ') {
             steps {
-                echo "checking out from git"    
+                echo "checking out from git1"    
                 checkout([$class: 'GitSCM', branches: [[name: '*/feature1']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '927d86e3-03fd-468c-a3e6-063f6771cea4', url: 'https://github.com/Pravina1/git-pipeline.git']]])
             }
             }
